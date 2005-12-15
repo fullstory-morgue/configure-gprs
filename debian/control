@@ -8,7 +8,5 @@ Standards-Version: 3.6.2
 Package: gprsconnect-kanotix
 Architecture: all
 Depends: ppp, ppp-scripts-kanotix, dialog, xdialog, modemlink-kanotix, xterm, kanotix-su
-Provides: gprsconnect-knoppix
-Conflicts: gprsconnect-knoppix
 Description: Starter for PPP connection over GPRS
  Minimal GUI for setting up GPRS connections with KANOTIX.

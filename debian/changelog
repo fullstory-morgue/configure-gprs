@@ -1,3 +1,10 @@
+gprsconnect-kanotix (0.5.6) unstable; urgency=low
+
+  * remove virtual knoppix packages.
+  * bump compat level.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 13 Dec 2005 09:16:17 +0100
+
 gprsconnect-kanotix (0.5.5) unstable; urgency=low
 
   * improve packaging.
@@ -7,7 +14,9 @@ gprsconnect-kanotix (0.5.5) unstable; urgency=low
 
 gprsconnect-kanotix (0.5.4) unstable; urgency=low
 
-  * synch with Knoppix 3.8. 
+  * synch with gprsconnect-knoppix 0.5-4, changes by Klaus Knopper
+    <knopper@knopper.net>:
+    - Don't block console in textmode, detach when connected.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Mar 2005 18:30:36 +0100
 
