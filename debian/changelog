@@ -1,8 +1,9 @@
-gprsconnect-kanotix (0.5.8) UNRELEASED; urgency=low
+gprsconnect-kanotix (0.5.8) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to utf-8.
+  * fix lintian errors.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Mar 2006 23:24:26 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Oct 2006 23:56:52 +0100
 
 gprsconnect-kanotix (0.5.7) unstable; urgency=low
 

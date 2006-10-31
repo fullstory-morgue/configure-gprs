@@ -30,14 +30,14 @@ trap bailout 1 2 3 15
 case "$LANGUAGE" in
 de*|at*|ch*)
 TITLE0="Keine Schnittstelle angegeben"
-MESSAGE0="Sie haben die Schnittstelle noch nicht eingerichtet, über die das Modem oder das Handy erreichbar ist. Möchten Sie dies jetzt nachholen?"
+MESSAGE0="Sie haben die Schnittstelle noch nicht eingerichtet, Ã¼ber die das Modem oder das Handy erreichbar ist. MÃ¶chten Sie dies jetzt nachholen?"
 TITLE_PROVIDER="GPRS - Provider"
 MESSAGE_PROVIDER="Bitte geben Sie an, welchen Mobilfunkanbieter Sie verwenden:"
 TITLE_TAG="GPRS - Provider-String"
 MESSAGE_TAG="Bitte geben Sie den INIT-String ein, den Ihr Provider zur Nutzung von GPRS in seiner Dokumentation empfiehlt:"
-NOCHANGE="(Keine Änderung)"
+NOCHANGE="(Keine Ã„nderung)"
 TITLE1="GPRS"
-MESSAGE1="Bitte beachten Sie, dass je nach Anbieter und Vertrag für die Nutzung von GPRS hohe Volumenkosten anfallen können (üblicherweise ca. 1 cent/kB), wobei GPRS ansonsten unabhängig von der Online-Zeit ist. Eine Traffic-Statistik können Sie in der \"Root-Shell\" mit dem Programm iptraf erhalten (über ppp0). GPRS Internet-Zugang jetzt starten?"
+MESSAGE1="Bitte beachten Sie, dass je nach Anbieter und Vertrag fÃ¼r die Nutzung von GPRS hohe Volumenkosten anfallen kÃ¶nnen (Ã¼blicherweise ca. 1 cent/kB), wobei GPRS ansonsten unabhÃ¤ngig von der Online-Zeit ist. Eine Traffic-Statistik kÃ¶nnen Sie in der \"Root-Shell\" mit dem Programm iptraf erhalten (Ã¼ber ppp0). GPRS Internet-Zugang jetzt starten?"
 TITLE_LOG="GPRS Einbuchung wurde initiiert, Strg-C zum Beenden."
 MESSAGE_DISCONNECT="GPRS beendet."
 ;;
