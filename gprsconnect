@@ -1,65 +1,59 @@
 #!/bin/bash
 
-PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin"
+PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 export PATH
 
 XDIALOG_HIGH_DIALOG_COMPAT=1
 export XDIALOG_HIGH_DIALOG_COMPAT
 
 # Get root
-[ "`id -u`" != "0" ] && exec sudo "$0" "$@"
+[ "`id -u`" != "0" ] && exec kanotix-su "$0" "$@"
 
 TMP="/tmp/gprsconnect$$"
 
-bailout(){
-rm -f "$TMP"
-exit 0
+bailout() {
+	rm -f "$TMP"
+	exit 0
 }
 
 DIALOG="dialog"
 [ -n "$DISPLAY" ] && [ -x /usr/bin/Xdialog ] && DIALOG="Xdialog"
 trap bailout 1 2 3 15
 
-# LANGUAGE etc.
-[ -f /etc/sysconfig/knoppix ] && . /etc/sysconfig/knoppix
-[ -z "$LANG" ] && export LANG
-[ -z "$LANGUAGE" ] && export LANGUAGE
-[ -z "$CHARSET" ] && export CHARSET
-
 # Language-dependent Messages
-case "$LANGUAGE" in
-de*|at*|ch*)
-TITLE0="Keine Schnittstelle angegeben"
-MESSAGE0="Sie haben die Schnittstelle noch nicht eingerichtet, über die das Modem oder das Handy erreichbar ist. Möchten Sie dies jetzt nachholen?"
-TITLE_PROVIDER="GPRS - Provider"
-MESSAGE_PROVIDER="Bitte geben Sie an, welchen Mobilfunkanbieter Sie verwenden:"
-TITLE_TAG="GPRS - Provider-String"
-MESSAGE_TAG="Bitte geben Sie den INIT-String ein, den Ihr Provider zur Nutzung von GPRS in seiner Dokumentation empfiehlt:"
-NOCHANGE="(Keine Änderung)"
-TITLE1="GPRS"
-MESSAGE1="Bitte beachten Sie, dass je nach Anbieter und Vertrag für die Nutzung von GPRS hohe Volumenkosten anfallen können (üblicherweise ca. 1 cent/kB), wobei GPRS ansonsten unabhängig von der Online-Zeit ist. Eine Traffic-Statistik können Sie in der \"Root-Shell\" mit dem Programm iptraf erhalten (über ppp0). GPRS Internet-Zugang jetzt starten?"
-TITLE_LOG="GPRS Einbuchung wurde initiiert, Strg-C zum Beenden."
-MESSAGE_DISCONNECT="GPRS beendet."
-;;
-*)
-TITLE0="No modem device selected"
-MESSAGE0="You have not configured a device for modem / cellphone access yet. Would you like to do this now?"
-TITLE_PROVIDER="GPRS - Provider"
-MESSAGE_PROVIDER="Please select your cellphone provider:"
-TITLE_TAG="GPRS - Provider-String"
-MESSAGE_TAG="Please enter the INIT string for GPRS that your provider recommends (check your documentation):"
-NOCHANGE="(No Change)"
-TITLE1="GPRS"
-MESSAGE1="Please be aware that surfing the net over GPRS, while not being onlinetime-dependent, can cause high costs for traffic volume, depending on your provider (usually about 1 cent/kB). You can get a detailled statistic about internet traffic in the \"Root-Shell\" using the program iptraf (on ppp0). Start GPRS Internet Access now?"
-TITLE_LOG="GPRS dialup initiated, hit Ctrl-C to disconnect."
-MESSAGE_DISCONNECT="GPRS disconnected."
-;;
+case "$LANG" in
+	de*|at*|ch*)
+		TITLE0="Keine Schnittstelle angegeben"
+		MESSAGE0="Sie haben die Schnittstelle noch nicht eingerichtet, über die das Modem oder das Handy erreichbar ist. Möchten Sie dies jetzt nachholen?"
+		TITLE_PROVIDER="GPRS - Provider"
+		MESSAGE_PROVIDER="Bitte geben Sie an, welchen Mobilfunkanbieter Sie verwenden:"
+		TITLE_TAG="GPRS - Provider-String"
+		MESSAGE_TAG="Bitte geben Sie den INIT-String ein, den Ihr Provider zur Nutzung von GPRS in seiner Dokumentation empfiehlt:"
+		NOCHANGE="(Keine Änderung)"
+		TITLE1="GPRS"
+		MESSAGE1="Bitte beachten Sie, dass je nach Anbieter und Vertrag für die Nutzung von GPRS hohe Volumenkosten anfallen können (üblicherweise ca. 1 cent/kB), wobei GPRS ansonsten unabhängig von der Online-Zeit ist. Eine Traffic-Statistik können Sie in der \"Root-Shell\" mit dem Programm iptraf erhalten (über ppp0). GPRS Internet-Zugang jetzt starten?"
+		TITLE_LOG="GPRS Einbuchung wurde initiiert, Strg-C zum Beenden."
+		MESSAGE_DISCONNECT="GPRS beendet."
+		;;
+	*)
+		TITLE0="No modem device selected"
+		MESSAGE0="You have not configured a device for modem / cellphone access yet. Would you like to do this now?"
+		TITLE_PROVIDER="GPRS - Provider"
+		MESSAGE_PROVIDER="Please select your cellphone provider:"
+		TITLE_TAG="GPRS - Provider-String"
+		MESSAGE_TAG="Please enter the INIT string for GPRS that your provider recommends (check your documentation):"
+		NOCHANGE="(No Change)"
+		TITLE1="GPRS"
+		MESSAGE1="Please be aware that surfing the net over GPRS, while not being onlinetime-dependent, can cause high costs for traffic volume, depending on your provider (usually about 1 cent/kB). You can get a detailled statistic about internet traffic in the \"Root-Shell\" using the program iptraf (on ppp0). Start GPRS Internet Access now?"
+		TITLE_LOG="GPRS dialup initiated, hit Ctrl-C to disconnect."
+		MESSAGE_DISCONNECT="GPRS disconnected."
+		;;
 esac
 
-disconnect(){
-poff
-$DIALOG --clear --title "$TITLE1" --msgbox "$MESSAGE_DISCONNECT" 8 35
-exit 0
+disconnect() {
+	poff
+	"$DIALOG" --clear --title "$TITLE1" --msgbox "$MESSAGE_DISCONNECT" 8 35
+	exit 0
 }
 
 trap disconnect 1 2 3 15
@@ -73,9 +67,9 @@ other "(INIT-String)" off)
 
 # MAIN
 if [ ! -e /dev/modem ]; then
-$DIALOG --title "$TITLE0" --yesno "$MESSAGE0" 8 65 || bailout
-/usr/sbin/modemlink
-[ -e /dev/modem ] || bailout
+	$DIALOG --title "$TITLE0" --yesno "$MESSAGE0" 8 65 || bailout
+	/usr/sbin/modemlink
+	[ -e /dev/modem ] || bailout
 fi
 
 rm -f "$TMP"
@@ -85,29 +79,42 @@ PROVIDER="${PROVIDER#\"}"; PROVIDER="${PROVIDER%\"}"
 rm -f "$TMP"
 
 case "$PROVIDER" in
-default) ;;
-o) INIT='AT+CGDCONT=1,"IP","internet"';;
-e) INIT='AT+CGDCONT=1,"IP","internet.eplus.de"' ;;
-v) INIT='AT+CGDCONT=1,"IP","web.vodafone.de"' ;;
-t) INIT='AT+CGDCONT=1,"IP","internet.t-d1.de"' ;;
-*) rm -f "$TMP"; $DIALOG --title "$TITLE_TAG" --inputbox "$MESSAGE_TAG" 12 60 "AT+CGDCONT=1,\"IP\",\"internet\"" 2>"$TMP" || bailout 1
-   read INIT <"$TMP" ;;
+	default)
+		;;
+	o)
+		INIT='AT+CGDCONT=1,"IP","internet"'
+		;;
+	e)
+		INIT='AT+CGDCONT=1,"IP","internet.eplus.de"'
+		;;
+	v)
+		INIT='AT+CGDCONT=1,"IP","web.vodafone.de"'
+		;;
+	t)
+		INIT='AT+CGDCONT=1,"IP","internet.t-d1.de"'
+		;;
+	*)
+		rm -f "$TMP";
+		"$DIALOG" --title "$TITLE_TAG" --inputbox "$MESSAGE_TAG" 12 60 "AT+CGDCONT=1,\"IP\",\"internet\"" 2>"$TMP" || bailout 1
+		read INIT <"$TMP" ;;
 esac
 
 [ "$PROVIDER" = "default" -o -z "$INIT" ] || perl -pi -e 's/^.*CGDCONT=.*$/OK		'"$INIT"'/g' /etc/chatscripts/gprs
 
-$DIALOG --title "$TITLE1" --yesno "$MESSAGE1" 12 65 || bailout
+"$DIALOG" --title "$TITLE1" --yesno "$MESSAGE1" 12 65 || bailout
 [ -x /etc/init.d/sysklogd ] && /etc/init.d/sysklogd start >/dev/null 2>&1
 # echo "AT" >/dev/modem
 sleep 1
+
 if [ -n "$DISPLAY" ] && type xterm >/dev/null; then
-pon gprs
-xterm -T "$TITLE_LOG" -e bash -c 'tail -n 0 -f /var/log/messages | egrep -e "(chat|ppp)"'
-disconnect
+	pon gprs
+	xterm -T "$TITLE_LOG" -e bash -c 'tail -n 0 -f /var/log/messages | egrep -e "(chat|ppp)"'
+	disconnect
 else
-# Start pppd right here.
-pppd updetach call gprs 
-sleep 2
-exit 0
+	# Start pppd right here.
+	pppd updetach call gprs 
+	sleep 2
+	
+	exit 0
 fi
 

@@ -1,8 +1,10 @@
-gprsconnect-kanotix (0.5.9) UNRELEASED; urgency=low
+gprsconnect-kanotix (0.5.9) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * don't add /usr/X11R6/bin/ to search path.
+  * move to kanotix-su.
+  * remove dependency on /etc/sysconfig/.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Oct 2006 23:58:14 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 21:07:39 +0100
 
 gprsconnect-kanotix (0.5.8) unstable; urgency=low
 
