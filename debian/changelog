@@ -1,3 +1,9 @@
+gprsconnect-kanotix (0.5.10) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 21:09:21 +0100
+
 gprsconnect-kanotix (0.5.9) unstable; urgency=low
 
   * don't add /usr/X11R6/bin/ to search path.
