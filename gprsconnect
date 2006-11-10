@@ -9,7 +9,7 @@ export XDIALOG_HIGH_DIALOG_COMPAT
 # Get root
 [ "`id -u`" != "0" ] && exec kanotix-su "$0" "$@"
 
-TMP="/tmp/gprsconnect$$"
+TMP="$(mktemp -p /tmp/ gprsconnect-XXXXXXXXXX)"
 
 bailout() {
 	rm -f "$TMP"

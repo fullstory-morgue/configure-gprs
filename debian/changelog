@@ -1,8 +1,8 @@
-gprsconnect-kanotix (0.5.10) UNRELEASED; urgency=low
+gprsconnect-kanotix (0.5.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix insecure tempfile handling
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 21:09:21 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Nov 2006 14:31:04 +0100
 
 gprsconnect-kanotix (0.5.9) unstable; urgency=low
 
