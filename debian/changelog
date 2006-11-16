@@ -1,8 +1,9 @@
-gprsconnect-kanotix (0.5.11) UNRELEASED; urgency=low
+gprsconnect-kanotix (0.5.11) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * use generic x-terminal-emulator support instead of harcoded application,
+    thanks to x-un-i.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Nov 2006 14:32:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 16 Nov 2006 22:41:08 +0100
 
 gprsconnect-kanotix (0.5.10) unstable; urgency=low
 

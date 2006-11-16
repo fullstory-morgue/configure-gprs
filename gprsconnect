@@ -106,9 +106,9 @@ esac
 # echo "AT" >/dev/modem
 sleep 1
 
-if [ -n "$DISPLAY" ] && type xterm >/dev/null; then
+if [ -n "$DISPLAY" ] ; then
 	pon gprs
-	xterm -T "$TITLE_LOG" -e bash -c 'tail -n 0 -f /var/log/messages | egrep -e "(chat|ppp)"'
+	x-terminal-emulator -T "$TITLE_LOG" -e bash -c 'tail -n 0 -f /var/log/messages | egrep -e "(chat|ppp)"'
 	disconnect
 else
 	# Start pppd right here.
