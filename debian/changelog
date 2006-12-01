@@ -1,8 +1,10 @@
-gprsconnect-kanotix (0.5.12) UNRELEASED; urgency=low
+configure-gprs (0.5.12) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  
+  * Initial sidux version
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 16 Nov 2006 22:43:23 +0100
+ -- Joaquim Boura <x-un-i@sidux.com>  Fri,  1 Dec 2006 17:39:51 +0100
 
 gprsconnect-kanotix (0.5.11) unstable; urgency=low
 

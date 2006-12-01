@@ -6,4 +6,4 @@ Name[de]=GPRS Einwahl
 Icon=gprsconnect
 Type=Application
 Terminal=0
-Exec=kanotix-su /usr/sbin/gprsconnect
+Exec=su-me /usr/sbin/gprsconnect
