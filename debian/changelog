@@ -1,10 +1,12 @@
-configure-gprs (0.5.12) UNRELEASED; urgency=low
+configure-gprs (0.5.12) unstable; urgency=low
 
-  * NOT RELEASED YET
-  
+  [ Joaquim Boura ]
   * Initial sidux version
 
- -- Joaquim Boura <x-un-i@sidux.com>  Fri,  1 Dec 2006 17:39:51 +0100
+  [ Stefan Lippers-Hollmann ]
+  * conflict with gprsconnect-kanotix.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Dec 2006 01:39:16 +0100
 
 gprsconnect-kanotix (0.5.11) unstable; urgency=low
 
