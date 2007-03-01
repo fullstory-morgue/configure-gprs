@@ -1,8 +1,5 @@
 #!/bin/bash
 
-PATH="/bin:/sbin:/usr/bin:/usr/sbin"
-export PATH
-
 XDIALOG_HIGH_DIALOG_COMPAT=1
 export XDIALOG_HIGH_DIALOG_COMPAT
 
@@ -11,7 +8,8 @@ export XDIALOG_HIGH_DIALOG_COMPAT
 
 TMP="$(mktemp -p /tmp/ gprsconnect-XXXXXXXXXX)"
 
-bailout() {
+bailout()
+{
 	rm -f "$TMP"
 	exit 0
 }
@@ -50,7 +48,8 @@ case "$LANG" in
 		;;
 esac
 
-disconnect() {
+disconnect()
+{
 	poff
 	"$DIALOG" --clear --title "$TITLE1" --msgbox "$MESSAGE_DISCONNECT" 8 35
 	exit 0
@@ -106,13 +105,13 @@ esac
 # echo "AT" >/dev/modem
 sleep 1
 
-if [ -n "$DISPLAY" ] ; then
+if [ -n "$DISPLAY" ] && [ -x /usr/bin/x-terminal-emulator ]; then
 	pon gprs
 	x-terminal-emulator -T "$TITLE_LOG" -e bash -c 'tail -n 0 -f /var/log/messages | egrep -e "(chat|ppp)"'
 	disconnect
 else
 	# Start pppd right here.
-	pppd updetach call gprs 
+	/usr/sbin/pppd updetach call gprs 
 	sleep 2
 	
 	exit 0

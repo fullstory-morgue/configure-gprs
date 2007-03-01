@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: configure-gprs
 Architecture: all
-Depends: ppp, ppp-scripts, dialog, xdialog, configure-modemlink, xterm | x-terminal-emulator, su-me
-Conflicts: gprsconnect-kanotix
+Depends: ppp, ppp-scripts, dialog, configure-modemlink, su-me
+Recommends: xdialog, xterm | x-terminal-emulator
 Description: Starter for PPP connection over GPRS
  Minimal GUI for setting up GPRS connections with sidux.

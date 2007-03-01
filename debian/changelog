@@ -1,8 +1,9 @@
-configure-gprs (0.5.13) UNRELEASED; urgency=low
+configure-gprs (0.5.13) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * gprsconnect-kanotix was never in sidux or debian, don't conflict with it.
+  * make X11 usage optional.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Dec 2006 01:41:53 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 12:47:10 +0100
 
 configure-gprs (0.5.12) unstable; urgency=low
 
