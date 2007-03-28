@@ -1,9 +1,10 @@
 [Desktop Entry]
-Comment=Starter for PPP over GPRS/UMTS
-Comment[de]=Startprogramm für PPP über GPRS/UMTS
+Encoding=UTF-8
+Type=Application
+Exec=su-me /usr/sbin/gprsconnect
+Icon=gprsconnect
 Name=GPRS connection
 Name[de]=GPRS Einwahl
-Icon=gprsconnect
-Type=Application
-Terminal=0
-Exec=su-me /usr/sbin/gprsconnect
+
+Categories=sidux;Net
+
