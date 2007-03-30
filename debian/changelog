@@ -1,12 +1,12 @@
-configure-gprs (0.5.14) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+configure-gprs (0.5.14) unstable; urgency=low
 
   [ Joaquim Boura ]
   * moving to xdg-menus
 
- -- Joaquim Boura <x-un-i@sidux.com>  Wed, 28 Mar 2007 21:38:16 +0200
+  [ Stefan Lippers-Hollmann ]
+  * depend on sidux-xdg.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Mar 2007 22:55:56 +0200
 
 configure-gprs (0.5.13) unstable; urgency=low
 
