@@ -1,8 +1,8 @@
-configure-gprs (0.5.15) UNRELEASED; urgency=low
+configure-gprs (0.5.15) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix *.desktop location.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Mar 2007 22:57:25 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 31 Mar 2007 01:34:48 +0200
 
 configure-gprs (0.5.14) unstable; urgency=low
 
