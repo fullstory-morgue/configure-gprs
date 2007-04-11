@@ -6,6 +6,9 @@ export XDIALOG_HIGH_DIALOG_COMPAT
 # Get root
 [ "`id -u`" != "0" ] && exec su-me "$0" "$@"
 
+# on the first time start the Bluetooth SDP daemon
+test `pidof sdpd` || sdpd
+
 TMP="$(mktemp -p /tmp/ gprsconnect-XXXXXXXXXX)"
 
 bailout()
