@@ -1,9 +1,5 @@
-configure-gprs (0.5.17) UNRELEASED; urgency=low
+configure-gprs (0.5.17) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * start the Bluetooth sdpd daemon if not already running. Thks to
     vedawalter-de
 
