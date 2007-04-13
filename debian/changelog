@@ -1,3 +1,9 @@
+configure-gprs (0.5.18) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 14 Apr 2007 01:36:53 +0200
+
 configure-gprs (0.5.17) unstable; urgency=low
 
   * start the Bluetooth sdpd daemon if not already running. Thks to
