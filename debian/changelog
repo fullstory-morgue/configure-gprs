@@ -1,8 +1,12 @@
 configure-gprs (0.5.18) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 14 Apr 2007 01:36:53 +0200
+  [ Joaquim Boura ]
+  * new icon sidux-gprs.
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun, 29 Apr 2007 18:25:47 +0200
 
 configure-gprs (0.5.17) unstable; urgency=low
 
