@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Exec=su-me /usr/sbin/gprsconnect
+Exec=/usr/sbin/gprsconnect
 Icon=sidux-gprs
 Name=GPRS connection
 Name[de]=GPRS Einwahl

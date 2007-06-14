@@ -2,3 +2,9 @@
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 
+install/configure-gprs::
+	mkdir -p debian/configure-gprs/usr/share/pixmaps
+	convert icons/hicolor/32x32/apps/sidux-gprs.png \
+		debian/configure-gprs/usr/share/pixmaps/configure-gprs.xpm
+	convert icons/hicolor/16x16/apps/sidux-gprs.png \
+		debian/configure-gprs/usr/share/pixmaps/configure-gprs-16.xpm
