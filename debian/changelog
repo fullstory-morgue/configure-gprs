@@ -1,8 +1,8 @@
-configure-gprs (0.5.20) UNRELEASED; urgency=low
+configure-gprs (0.5.20) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix debian menu.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 14 Jun 2007 17:07:10 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 07 Jul 2007 15:28:28 +0200
 
 configure-gprs (0.5.19) unstable; urgency=low
 

@@ -1,4 +1,5 @@
-?package(configure-gprs):needs="text" \
+?package(configure-gprs): \
+	needs="X11" \
 	section="Apps/System" \
 	hints="sidux,Config" \
 	title="Configure GPRS connection" \
