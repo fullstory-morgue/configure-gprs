@@ -1,9 +1,5 @@
-configure-gprs (0.5.21) UNRELEASED; urgency=low
+configure-gprs (0.5.21) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Horst Tritremmel ]
   * add gettext to (build-) dependencies
   * add gettext support and german language file
   * changed Xdialog to ssft

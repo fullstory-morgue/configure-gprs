@@ -1,6 +1,7 @@
 #!/bin/bash
 
 {
-bash --dump-po-strings kernel-remover
+	bash --dump-po-strings ./gprsconnect
 
 } | msguniq > po/messages.pot
+
