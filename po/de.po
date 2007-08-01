@@ -1,0 +1,78 @@
+# translation of de.po to Deutsch
+# German translations for PACKAGE package.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# hjt <hjt@sidux.com>, 2007.
+# Horst Tritremmel <hjt@sidux.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-01 12:50+0200\n"
+"PO-Revision-Date: 2007-08-01 13:01+0200\n"
+"Last-Translator: Horst Tritremmel <hjt@sidux.com>\n"
+"Language-Team: Deutsch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: gprsconnect:16
+msgid "Error: You must be root to run this script!"
+msgstr ""
+
+#: gprsconnect:47 gprsconnect:106
+msgid "GPRS"
+msgstr ""
+
+#: gprsconnect:47
+msgid "GPRS disconnected."
+msgstr "GPRS beendet."
+
+#: gprsconnect:54
+msgid "(No Change)"
+msgstr "(Keine Änderung)"
+
+#: gprsconnect:66
+msgid "No modem device selected"
+msgstr "Keine Schnittstelle angegeben"
+
+#: gprsconnect:67
+msgid ""
+"You have not configured a device for modem / cellphone access yet. Would you "
+"like to do this now?"
+msgstr "Sie haben die Schnittstelle noch nicht eingerichtet, über die das Modem oder das Handy erreichbar ist. Möchten Sie dies jetzt nachholen?"
+
+#: gprsconnect:74
+msgid "GPRS - Provider"
+msgstr ""
+
+#: gprsconnect:74
+msgid "Please select your cellphone provider:"
+msgstr "Bitte geben Sie an, welchen Mobilfunkanbieter Sie verwenden:"
+
+#: gprsconnect:96
+msgid "GPRS - Provider-String"
+msgstr ""
+
+#: gprsconnect:97
+msgid ""
+"Please enter the INIT string for GPRS that your provider recommends (check "
+"your documentation):"
+msgstr "Bitte geben Sie den INIT-String ein, den Ihr Provider zur Nutzung von GPRS in seiner Dokumentation empfiehlt:"
+
+#: gprsconnect:107
+msgid ""
+"Please be aware that surfing the net over GPRS, while not being onlinetime-"
+"dependent, can cause high costs for traffic volume, depending on your "
+"provider (usually about 1 cent/kB). You can get a detailled statistic about "
+"internet traffic in the \"Root-Shell\" using the program iptraf (on ppp0). "
+"Start GPRS Internet Access now?"
+msgstr "Bitte beachten Sie, dass je nach Anbieter und Vertrag für die Nutzung von GPRS hohe Volumenkosten anfallen können (üblicherweise ca. 1 cent/kB), wobei GPRS ansonsten unabhängig von der Online-Zeit ist. Eine Traffic-Statistik können Sie in der \"Root-Shell\" mit dem Programm iptraf erhalten (über ppp0). GPRS Internet-Zugang jetzt starten?"
+
+#: gprsconnect:116
+msgid "GPRS dialup initiated, hit Ctrl-C to disconnect."
+msgstr "GPRS Einbuchung wurde initiiert, Strg-C zum Beenden."
+

@@ -2,12 +2,12 @@ Source: configure-gprs
 Section: net
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 5), imagemagick
+Build-Depends: cdbs, debhelper (>= 5), imagemagick, gettext
 Standards-Version: 3.7.2
 
 Package: configure-gprs
 Architecture: all
-Depends: ppp, ppp-scripts, dialog, configure-modemlink, su-me, sidux-xdg
-Recommends: xdialog, xterm | x-terminal-emulator
+Depends: ppp, ppp-scripts, ssft, configure-modemlink, su-me, sidux-xdg, gettext
+Recommends: xterm | x-terminal-emulator
 Description: Starter for PPP connection over GPRS
  Minimal GUI for setting up GPRS connections with sidux.

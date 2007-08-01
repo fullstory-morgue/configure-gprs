@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-01 12:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gprsconnect:16
+msgid "Error: You must be root to run this script!"
+msgstr ""
+
+#: gprsconnect:47 gprsconnect:106
+msgid "GPRS"
+msgstr ""
+
+#: gprsconnect:47
+msgid "GPRS disconnected."
+msgstr ""
+
+#: gprsconnect:54
+msgid "(No Change)"
+msgstr ""
+
+#: gprsconnect:66
+msgid "No modem device selected"
+msgstr ""
+
+#: gprsconnect:67
+msgid ""
+"You have not configured a device for modem / cellphone access yet. Would you "
+"like to do this now?"
+msgstr ""
+
+#: gprsconnect:74
+msgid "GPRS - Provider"
+msgstr ""
+
+#: gprsconnect:74
+msgid "Please select your cellphone provider:"
+msgstr ""
+
+#: gprsconnect:96
+msgid "GPRS - Provider-String"
+msgstr ""
+
+#: gprsconnect:97
+msgid ""
+"Please enter the INIT string for GPRS that your provider recommends (check "
+"your documentation):"
+msgstr ""
+
+#: gprsconnect:107
+msgid ""
+"Please be aware that surfing the net over GPRS, while not being onlinetime-"
+"dependent, can cause high costs for traffic volume, depending on your "
+"provider (usually about 1 cent/kB). You can get a detailled statistic about "
+"internet traffic in the \"Root-Shell\" using the program iptraf (on ppp0). "
+"Start GPRS Internet Access now?"
+msgstr ""
+
+#: gprsconnect:116
+msgid "GPRS dialup initiated, hit Ctrl-C to disconnect."
+msgstr ""
