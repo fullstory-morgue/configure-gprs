@@ -29,10 +29,6 @@ SSFTSH="$(which ssft.sh)"			|| SSFTSH="/usr/bin/ssft.sh"
 [ -n "$SSFT_FRONTEND" ] ||  SSFT_FRONTEND="$(ssft_choose_frontend)"
 
 
-# on the first time start the Bluetooth SDP daemon
-test $(pidof sdpd) || sdpd
-#pgrep -x sdpd || sdpd
-
 bailout()
 {
 	exit 0
