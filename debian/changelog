@@ -1,9 +1,5 @@
-configure-gprs (0.6.1) UNRELEASED; urgency=low
+configure-gprs (0.6.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * sdpd does not exist anylong (thx vedawalter-de)
 
  -- Joaquim Boura <x-un-i@sidux.com>  Mon, 20 Aug 2007 18:16:26 +0200
