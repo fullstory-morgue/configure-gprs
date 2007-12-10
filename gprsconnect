@@ -48,7 +48,8 @@ trap disconnect 1 2 3 15
 
 PROVIDERS=(
 "default: $(gettext "(No Change)")" \
-"o: O2" \
+"o: O2 (Standard GPRS)" \
+"p: O2 (Internet-Pack-S/M/L)" \
 "e: E-Plus" \
 "v: Vodafone" \
 "t: T-Mobile" \
@@ -76,6 +77,9 @@ case "$PROVIDER" in
 		;;
 	o)
 		INIT='AT+CGDCONT=1,"IP","internet"'
+		;;
+	p)
+		INIT='AT+CGDCONT=1,"IP","surfo2"'
 		;;
 	e)
 		INIT='AT+CGDCONT=1,"IP","internet.eplus.de"'

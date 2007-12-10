@@ -1,8 +1,12 @@
 configure-gprs (0.6.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Dec 2007 16:42:33 +0100
+  [ Joaquim Boura ]
+  * thanks to hathe: New Provider connect string
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Mon, 10 Dec 2007 18:04:10 +0100
 
 configure-gprs (0.6.3) unstable; urgency=low
 
