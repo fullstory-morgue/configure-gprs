@@ -1,3 +1,9 @@
+configure-gprs (0.6.5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Dec 2007 19:13:39 +0100
+
 configure-gprs (0.6.4) unstable; urgency=low
 
   * thanks to hathe: New Provider connect string
