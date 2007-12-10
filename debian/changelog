@@ -1,9 +1,5 @@
-configure-gprs (0.6.4) UNRELEASED; urgency=low
+configure-gprs (0.6.4) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * thanks to hathe: New Provider connect string
 
  -- Joaquim Boura <x-un-i@sidux.com>  Mon, 10 Dec 2007 18:04:10 +0100
