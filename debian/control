@@ -9,7 +9,7 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/configure-gprs/trunk/
 
 Package: configure-gprs
 Architecture: all
-Depends: ppp, ppp-scripts, ssft, configure-modemlink, su-me, sidux-xdg, gettext
-Recommends: xterm | x-terminal-emulator
+Depends: ppp, ppp-scripts, ssft, configure-modemlink, gettext
+Recommends: menu, xterm | x-terminal-emulator
 Description: Starter for PPP connection over GPRS
  Minimal GUI for setting up GPRS connections with sidux.

@@ -5,4 +5,4 @@
 	title="Configure GPRS connection" \
 	icon32x32="/usr/share/pixmaps/configure-gprs.xpm" \
 	icon16x16="/usr/share/pixmaps/configure-gprs-16.xpm" \
-	command="/usr/sbin/gprsconnect"
+	command="su-to-root -X -c /usr/sbin/gprsconnect"
