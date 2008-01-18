@@ -1,8 +1,9 @@
 configure-gprs (0.7.1) unstable; urgency=low
 
   * update to debhelper compat 6.
+  * remove bogus debian/dirs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 18 Jan 2008 23:01:43 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 18 Jan 2008 23:04:39 +0100
 
 configure-gprs (0.7.0) unstable; urgency=low
 
